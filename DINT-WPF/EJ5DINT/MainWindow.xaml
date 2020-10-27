@@ -1,0 +1,22 @@
+﻿<Window x:Class="EJ5DINT.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EJ5DINT"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="269.537" Width="564.74">
+    <Grid>
+        <TextBox x:Name="textoTextBox" HorizontalAlignment="Left" Height="62" Margin="10,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="152" TextChanged="textoTextBox_TextChanged"/>
+        <CheckBox x:Name="negritaCheckBox" Content="Negrita" HorizontalAlignment="Left" Margin="187,67,0,0" VerticalAlignment="Top" FontWeight="Bold" IsChecked="False" Checked="negritaCheckBox_Checked" Unchecked="negritaCheckBox_Unchecked"/>
+        <CheckBox x:Name="cursivaCheckBox" Content="Cursiva" HorizontalAlignment="Left" Margin="285,67,0,0" VerticalAlignment="Top" FontStyle="Italic" Checked="cursivaCheckBox_Checked" Unchecked="cursivaCheckBox_Unchecked"/>
+        <TextBlock HorizontalAlignment="Left" Margin="377,87,0,0" TextWrapping="Wrap" Text="Color del texto" VerticalAlignment="Top"/>
+        <RadioButton Tag="1" x:Name="C" GroupName="1" Content="Azul" HorizontalAlignment="Left" Margin="466,68,0,0" VerticalAlignment="Top" Checked="radioButton_Checked"/>
+        <RadioButton Tag="2" x:Name="Verde" GroupName="1" Content="Verde" HorizontalAlignment="Left" Margin="465,88,0,0" VerticalAlignment="Top" Checked="radioButton_Checked"/>
+        <RadioButton Tag="3" x:Name="Rojo" GroupName="1" Content="Rojo" HorizontalAlignment="Left" Margin="466,108,0,0" VerticalAlignment="Top" Checked="radioButton_Checked"/>
+        
+        <Label x:Name="verTextoLabel" Content="" HorizontalAlignment="Left" Margin="77,180,0,0" VerticalAlignment="Top" Width="401" Background="#FFFBF4AF" HorizontalContentAlignment="Center"  />
+        <TextBlock HorizontalAlignment="Left" Margin="10,46,0,0" TextWrapping="Wrap" Text="Texto" VerticalAlignment="Top" RenderTransformOrigin="-0.176,0.689"/>
+
+    </Grid>
+</Window>
