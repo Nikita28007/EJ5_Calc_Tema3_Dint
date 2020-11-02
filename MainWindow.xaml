@@ -8,24 +8,11 @@
         Title="MainWindow" Height="595.926" Width="459.154"
         Icon="256.ico">
     <Window.Resources>
+
         <Style TargetType="Button">
             <Setter Property="Margin" Value="1,1,1,1"/>
             <EventSetter  Event="Click" Handler="Button_Click"/>
         </Style>
-
-        <Style TargetType="TextBlock">
-            <Setter Property="Grid.Row" Value="0"/>
-            <Setter Property="Grid.Column" Value="0"/>
-            <Setter Property="Grid.ColumnSpan" Value="3" />
-            <Setter Property="Margin" Value="0,5,0,5" />
-            <Setter Property="TextWrapping" Value="NoWrap" />
-        </Style>
-
-        <Style TargetType="Button" x:Key="0" BasedOn="{StaticResource {x:Type Button}}">
-            <Setter Property="Height" Value="10"/>
-
-        </Style>
-
     </Window.Resources>
     
     
@@ -51,7 +38,7 @@
 
             </Grid.RowDefinitions>
 
-            <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="3" Margin="0,1,0,3">
+            <Border   Style="{StaticResource borde}">
                 <TextBlock x:Name="numerosTextBlock" Text="" />
             </Border>
             <Button Grid.Row="2">1</Button>

@@ -4,6 +4,27 @@
              xmlns:local="clr-namespace:EJ5_Calc_Tema3_Dint"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+     
+
+        <Style TargetType="TextBlock">
+            <Setter Property="Grid.Row" Value="0"/>
+            <Setter Property="Grid.Column" Value="0"/>
+            <Setter Property="Grid.ColumnSpan" Value="3" />
+            <Setter Property="Margin" Value="0,5,0,5" />
+            <Setter Property="TextWrapping" Value="NoWrap" />
+        </Style>
+
+        <Style TargetType="Button" x:Key="0" BasedOn="{StaticResource {x:Type Button}}">
+            <Setter Property="Height" Value="10"/>
+
+        </Style>
+
+        <Style TargetType="Border" x:Key="borde">
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Grid.ColumnSpan" Value="3"/>
+            <Setter Property="Margin" Value="1,1,1,3"/>
+           
+        </Style>
     </Application.Resources>
 </Application>
