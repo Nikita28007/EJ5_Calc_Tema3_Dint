@@ -32,7 +32,7 @@ namespace EJ5_Calc_Tema3_Dint
 
 
             Button boton = sender as Button;
-            numerosTextBlock.Text += (string)boton.Content;
+            numerosTextBlock.Text += boton.Content.ToString();
       
 
 
